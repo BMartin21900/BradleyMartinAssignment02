@@ -23,5 +23,7 @@ I made the following changes...
 7.Got rid of the javascript
   a.The website I originally downloaded seemed to be bugged as there was random times it would be stuck loading.
   b.Getting rid of the javascript fixed this.
-8.Overall change in design
-9.Minor edits and changes for looks/function.
+8.Added a 'is-current' color to navigation
+  a.To make up for the javascript error, I went and changed the color of the navigation link of the current page. This tells the user where they are in the site and where they can go.
+9.Overall change in design
+10.Minor edits and changes for looks/function.
