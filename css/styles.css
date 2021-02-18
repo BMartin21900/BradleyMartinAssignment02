@@ -162,4 +162,8 @@ td { padding: 8px; }
 	font-size: 25px;
 }
 .main-menu a { padding: 5px; }
-.is-current { color: #f0021a; }
+.is-current { 
+	color: #f0021a; 
+	pointer-events: none;
+    cursor: default;
+}
