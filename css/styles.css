@@ -1,12 +1,11 @@
-/* CSS for the NYC website */
-
-/* *** Base ********************* */
+/*Added a different background*/
 body {
-	background-image: url(../images/logo.jpg);
+	background-image: url("../images/bg.jpg");
+	background-size:auto;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-size: 175px 175px;
-	background-position: top center;
+	margin: 0px;
+	padding: 0px;
 }
 h1, h2, h3, h4, h5, h6, th {
 	margin-top: 0;
@@ -15,18 +14,43 @@ h1, h2, h3, h4, h5, h6, th {
 	font-size: 1.3em;
 	text-align: left;
 }
+/* changed background image to a clickable logo*/
+
+h1 a{
+	display: inline-flex;
+}
+
+h1{
+	background-color: white;
+	border-color: #525252;
+	border-bottom-style: solid;
+
+}
+
+.title{
+	margin-top: auto;
+	margin-bottom: auto;
+	padding-left: 10px;
+	font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+}
+
+h1 img{
+	width:75px;
+	border-style: none;
+}
+
 h2 {
-	background-color: #9F9438;
+	background-color: #f0021a;
 	opacity: 0.7;
 	box-shadow: 5px 5px 10px 0 #cccccc;
 	border-radius: 5px;
-	color: white;
+	color: black;
+	font-weight: bold;
 	letter-spacing: 1px;
-	font-weight: normal;
 	padding: 10px;
 
 	/* background image… */
-	background-image: url("../images/yangzhoulogo.jpg");
+	background-image: url("../images/textbg.png");
 	background-repeat: no-repeat;     
 	background-position: 10px center;
 	padding-left: 50px;
@@ -38,6 +62,18 @@ p, ol, ul, td {
   line-height: 1.4em;
   text-align: left;
 }
+
+p{
+	 background-color: white;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px 0 #cccccc;
+}
+
+.container img{
+box-shadow: 5px 5px 10px 0 #cccccc;
+}
+
 img {
   border: 1px solid black;
   width: 100%;
@@ -45,12 +81,12 @@ img {
 
 /* ------- Links -------- */
 a {
-	text-decoration: underline;
+	text-decoration: none;
 	color: black;
+	 font-weight: bold;
 }
 a:hover {
-	color: white;
-	background: #BBB576;
+	color: #f0021a;
 }
 a:active { text-decoration: none; }
 
@@ -78,6 +114,9 @@ td { padding: 8px; }
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-column-gap: 25px;
+	background-color: rgba(255, 255, 255, 0.85);
+	padding: 25px;
+	border-radius: 20px;
 }
 .page-header, .main-menu, .large, .page-footer { grid-column: 1 / 4; }
 @media (max-width: 600px) {
@@ -89,15 +128,12 @@ td { padding: 8px; }
 
 /* ----- Page Header ----- */
 .page-header h1 { 
-	margin: 15px 0 0; 
-	font-size: 1.7em;
+	font-size: 50px;
 }
 .page-header a { 
 	text-decoration: none; 
 	padding: 5px;
 }
-.page-header a:hover { background-color: #BBB576; }
-.page-header a:active { background-color: LightGray; }
 
 /* ----- Page Footer ----- */
 .page-footer { 
@@ -115,7 +151,15 @@ td { padding: 8px; }
   padding-left: 0;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
-.main-menu li { margin-right: 2%; }
+.main-menu li { 
+	margin-right: 2%; 
+	background-color: white;
+	border-radius: 15px;
+	padding:15px;
+	box-shadow: 5px 5px 10px 0 #cccccc;
+	font-size: 25px;
+}
 .main-menu a { padding: 5px; }
 .is-current { background-color: #BBB576; }
